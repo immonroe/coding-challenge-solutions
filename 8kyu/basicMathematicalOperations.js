@@ -11,14 +11,19 @@
 // ('*', 5, 5) --> 25
 // ('/', 49, 7) --> 7
 
-function basicOp(operation, value1, value2){
-    if (operation === '+') {
-        return value1 + value2
-    } else if (operation === '-') {
-        return value1 - value2
-    } else if (operation === '/') {
-        return value1 / value2
-    } else if (operation === '*') {
-        return value1 * value2
-    }
-  }
+// function basicOp(operation, value1, value2){
+//     if (operation === '+') {
+//         return value1 + value2
+//     } else if (operation === '-') {
+//         return value1 - value2
+//     } else if (operation === '/') {
+//         return value1 / value2
+//     } else if (operation === '*') {
+//         return value1 * value2
+//     }
+// }
+
+// Most efficient solution - eval bascially registers what's entered as JavaScript code in the console
+function basicOp(o, a, b) {
+return eval(a+o+b);
+}
