@@ -8,10 +8,11 @@
 // solution('abc', 'd') // returns false
 
 function solution(str, ending){
+  
     // TODO: complete
-    if ((str.charAt(str.length - 1)) === ending.charAt(ending.length - 1)) {
-        return true 
+    if (str.endsWith(ending)) {
+      return true 
     } else {
-        return false
+      return false
     }
-}
+}  
