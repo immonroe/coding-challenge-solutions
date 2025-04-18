@@ -24,5 +24,5 @@ function isValidWalk(walk) {
         }
     }
 
-    return n ===s && e === w
+    return n === s && e === w
 }
