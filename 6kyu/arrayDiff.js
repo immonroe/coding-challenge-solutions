@@ -9,4 +9,11 @@
 
 function arrayDiff(a, b) {
     return b.length === 0 ? a : a.filter(item => !b.includes(item))
+
+    // alternative solution without using ternary operator
+    // if (b.length > 0) {
+    //     return a.filter(x => !b.includes(x))
+    // } else {
+    //     return a
+    // }
 }
