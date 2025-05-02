@@ -23,3 +23,8 @@ function digitalRoot(n) {
     }
     return n
 }
+
+// efficient answer
+function digital_root(n) {
+    return (n - 1) % 9 + 1;
+}
