@@ -19,10 +19,10 @@
 
 function printerError(s) {
     count = 0
-    for (let index in s) {
-        if (s[index] > 'm') {
-        count ++
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] > 'm') {
+            count++
         }
     }
-    return count + '/' + s.length
+    return `${count}/${s.length}`
 }
