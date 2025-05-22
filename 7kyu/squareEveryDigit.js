@@ -11,6 +11,5 @@
 // Happy Coding!
 
 function squareDigits(num) {
-  //   console.log(num)
   return Number(num.toString().split('').map((x) => Number(x ** 2)).join(''))
 }
