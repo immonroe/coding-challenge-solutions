@@ -18,13 +18,18 @@ class Solution {
      * @return {boolean}
      */
     hasDuplicate(nums) {
+        // create set
         const seen = new Set()
+        // loop through arr of nums
         for (const element of nums) {
+            // use .has() method to check if value in set exists
             if (seen.has(element)) {
                 return true
             }
+            // if it doesn't, add it - make sure to keep this within scope of for loop
             seen.add(element)
         }
+        // if condition is not met return false
         return false
     }
 }
