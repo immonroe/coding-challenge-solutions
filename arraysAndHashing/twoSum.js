@@ -37,6 +37,7 @@ class Solution {
 
 
     twoSum(nums, target) {
+
         const prevMap = new Map()
 
         for (let i = 0; i < nums.length; i++) {
