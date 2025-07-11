@@ -31,7 +31,7 @@ class Solution:
             count = [0] * 26 # a ... z
 
             for c in s:
-                count[ord(c) - ord("a")] += 1 # using ascii value to subtract
+                count[ord(c) - ord("a")] += 1 # using unicode value to subtract
             
             res[tuple(count)].append(s) # group  anagrams by count, tuples can for store keys (need for this part)
 
