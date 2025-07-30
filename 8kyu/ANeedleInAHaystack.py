@@ -14,6 +14,6 @@
 # Note: In COBOL, it should return "found the needle at position 6"
 
 def find_needle(haystack):
-    for i in range(len(haystack)):
-        if haystack[i] == 'needle':
+    for i, item in enumerate(haystack):
+        if item == 'needle':
             return f'found the needle at position {i}'
