@@ -10,9 +10,10 @@
 # Input: 123456789 Output: 987654321
 
 def descending_order(num):
-    # Bust a move right here
-    s = str(num)
-    digits = list(s)
-    digits.sort(reverse=True)
-    sorted_s = ''.join(digits)
-    return int(sorted_s)
+    # s = str(num)
+    # digits = list(s)
+    # digits.sort(reverse=True)
+    # sorted_s = ''.join(digits)
+    # return int(sorted_s)
+
+    return int(''.join(sorted(str(num), reverse=True)))
