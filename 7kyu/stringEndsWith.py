@@ -6,4 +6,4 @@
 # solution('abc', 'd') # returns false
 
 def solution(text, ending):
-    return True if text.endswith(ending) else False
+    return text.endswith(ending)
