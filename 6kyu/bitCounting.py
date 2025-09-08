@@ -5,11 +5,4 @@
 # Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
 
 def count_bits(n):
-    count = 0
-    bit = bin(n)[:2]
-    arr = [int(i) for i in str(bit)]
-
-    for i in arr:
-        if i == 1:
-            count += 1
-    return count
+    return bin(n).count('1')
