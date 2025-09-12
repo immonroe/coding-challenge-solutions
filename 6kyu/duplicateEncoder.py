@@ -10,3 +10,13 @@
 # Notes
 # Assertion messages may be unclear about what they display in some languages. If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
 
+def duplicate_encode(word):
+    res = ''
+    word = word.lower()
+    
+    for char in word:
+        if word.count(char) > 1:
+            res += ')'
+        else:
+            res += '('
+    return res
