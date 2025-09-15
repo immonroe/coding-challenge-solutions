@@ -18,4 +18,4 @@
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        return sorted(s.lower()) == sorted(t.lower())
+        return False if len(s) != len(t) else sorted(s.lower()) == sorted(t.lower())
