@@ -30,9 +30,9 @@ class Solution:
         for s in strs:
             count = [0] * 26 # a ... z
 
-            for c in s:
-                count[ord(c) - ord("a")] += 1 # using unicode value to subtract
+        for c in s:
+            count[ord(c) - ord('a')] +=1 # using unicode value to subtract
             
-            res[tuple(count)].append(s) # group  anagrams by count, tuples can for store keys (need for this part)
+        res[tuple(count)].append(s) # group anagrams by count, tuples can for store keys (need for this part)
 
-        return list(res.values()) # don't need keys so turning to normal list
+        return list(res.values) # don't need keys so turning to normal list
