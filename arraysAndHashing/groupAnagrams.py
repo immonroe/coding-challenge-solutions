@@ -35,4 +35,4 @@ class Solution:
             
         res[tuple(count)].append(s) # group anagrams by count, tuples can for store keys (need for this part)
 
-        return list(res.values) # don't need keys so turning to normal list
+        return list(res.values()) # don't need keys so turning to normal list
