@@ -23,16 +23,17 @@ class Solution:
     def encode(self, strs: List[str]) -> str:
         res = ''
         for s in strs:
-            res += str(len(s)) + '#' + s
+            res += str(len(s)) + '#' + s # concat # sign to str character
         return res
     
     def decode(self, s: str) -> List[str]:
         res,i = [],0
 
-        while i < len(s):
+        while i < len(s): # iterate over entire encoded str
             j = i
-            while s[j] != '#':
+            while s[j] != '#': # find where the # is
                 j+= 1
-            length = int(s[i:j])
-            res.append(s[j + 1 : j + 1 + length])
+            length = int(s[i:j]) # everything between i and j is the number (the length of the word)
+            res.append(s[j + 1 : j + 1 + length]) # slice out the actual word
+            i = j + 1 + length # move i forward to the next encoded word
         return res
