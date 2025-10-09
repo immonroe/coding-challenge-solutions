@@ -1,3 +1,4 @@
+# Generate Parentheses
 # You are given an integer n. Return all well-formed parentheses strings that you can generate with n pairs of parentheses.
 
 # Example 1:
@@ -18,8 +19,7 @@
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        stack = []
-        res = []
+        stack, res = [], []
 
         def backtrack(openN, closedN):
             if (openN == closedN == n):
