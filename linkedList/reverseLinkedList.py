@@ -16,3 +16,13 @@
 # 0 <= The length of the list <= 1000.
 # -1000 <= Node.val <= 1000
 
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev,curr = None, head
+
+        while curr:
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+        return prev
